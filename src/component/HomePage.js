@@ -54,6 +54,16 @@ const HomePage = () => {
             <option value="asn">low to rating</option>
             <option value="dsn">high to rating</option>
           </select>
+          <select onChange={(e) => setSort(e.target.value)}   className =  "p-2 w-[10%] focus:outline-none">
+            <option value="priceasn">low to price</option>
+            <option value="pricedsn">high to price</option>
+          </select>
+
+          <select onChange={(e) => setSort(e.target.value)}   className =  "p-2 w-[10%] focus:outline-none">
+            <option value="disasn">low to discount</option>
+            <option value="disdsn">high to discount</option>
+          </select>
+
           <select
             className="w-[50%] p-4 border border-gray-600 focus:outline-none   "
             onChange={(e) => setfilterdata(e.target.value)}

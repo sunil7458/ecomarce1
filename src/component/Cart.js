@@ -53,7 +53,7 @@ const Cart = () => {
                             <div className="flex flex-col space-y-4">
                               <div>
                                 <span>{data.rating}</span>
-                                <span className="text-white">{data.stock}</span>
+                                <span className="text-white">{data.discountPercentage}</span>
                               </div>
                               <FontAwesomeIcon  icon={faTrash} onClick ={remov}/>
                             </div>
